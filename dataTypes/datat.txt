@@ -1,0 +1,13 @@
+8 bit - 1byte
+
+16 bit - short
+
+32 bit - int
+
+44 bit - long
+
+16 bit - char
+
+1 bit - boolean - true or false
+
+// No system a
