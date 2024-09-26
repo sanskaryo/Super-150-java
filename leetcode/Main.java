@@ -1,21 +1,20 @@
-import java.util.*;
 
 public class Main {
 
     public static int searchInsert(int [] arr, int x) {
-        int n = arr.length; // size of the array
+        int n = arr.length;
         int low = 0, high = n - 1;
         int ans = n;
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            // maybe an answer
+      
             if (arr[mid] >= x) {
                 ans = mid;
-                //look for smaller index on the left
+            
                 high = mid - 1;
             } else {
-                low = mid + 1; // look on the right
+                low = mid + 1; 
             }
         }
         return ans;
@@ -28,3 +27,4 @@ public class Main {
         System.out.println("The index is: " + ind);
     }
 }
+
