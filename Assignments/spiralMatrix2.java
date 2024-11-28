@@ -1,3 +1,4 @@
+import java.io.Serial;
 import java.util.Scanner;
 
 public class spiralMatrix2 {
@@ -76,4 +77,78 @@ public class spiralMatrix2 {
     //     }
     // }
 }
+}
+// Required libraries
+#include <SPI.h>
+#include <Wire.h>
+
+// Define pin assignments
+const int flowMeterPin = A0;  // Analog pin for flow meter
+const int fuelLevelPin = A1;   // Analog pin for fuel level sensor
+const int voltageSensorPin = A2; // Analog pin for voltage sensor
+const int currentSensorPin = A3; // Analog pin for current sensor
+
+void setup() {
+    Serial.begin(9600); // Starts serial communication at 9600 bps
+}
+
+void loop() {
+    // Read the values from the sensors
+    int flowMeterValue = analogRead(flowMeterPin);
+    int fuelLevelValue = analogRead(fuelLevelPin);
+    int voltageValue = analogRead(voltageSensorPin);
+    int currentValue = analogRead(currentSensorPin);
+    
+    // Convert raw values to meaningful metrics (these formulas depend on your specific sensors)
+    float flowRate = flowMeterValue * (5.0 / 1023.0); // Example conversion
+    float fuelLevel = fuelLevelValue * (100.0 / 1023.0); // Percentage
+    float voltage = voltageValue * (5.0 / 1023.0) * 5; // Assuming it reads 0-5V
+    float current = currentValue * (5.0 / 1023.0); // Example conversion
+
+    // Print to serial for monitoring
+    Serial.print("Flow Rate: "); Serial.print(flowRate); Serial.println(" L/h");
+    Serial.print("Fuel Level: "); Serial.print(fuelLevel); Serial.println("%");
+    Serial.print("Voltage: "); Serial.print(voltage); Serial.println(" V");
+    Serial.print("Current: "); Serial.print(current); Serial.println(" A");
+    
+    // Delay before the next reading
+    delay(1000);
+}
+
+
+// Required libraries
+#include <SPI.h>
+#include <Wire.h>
+
+// Define pin assignments
+const int flowMeterPin = A0;  // Analog pin for flow meter
+const int fuelLevelPin = A1;   // Analog pin for fuel level sensor
+const int voltageSensorPin = A2; // Analog pin for voltage sensor
+const int currentSensorPin = A3; // Analog pin for current sensor
+
+void setup() {
+    Serial.begin(9600); // Starts serial communication at 9600 bps
+}
+
+void loop() {
+    // Read the values from the sensors
+    int flowMeterValue = analogRead(flowMeterPin);
+    int fuelLevelValue = analogRead(fuelLevelPin);
+    int voltageValue = analogRead(voltageSensorPin);
+    int currentValue = analogRead(currentSensorPin);
+    
+    // Convert raw values to meaningful metrics (these formulas depend on your specific sensors)
+    float flowRate = flowMeterValue * (5.0 / 1023.0); // Example conversion
+    float fuelLevel = fuelLevelValue * (100.0 / 1023.0); // Percentage
+    float voltage = voltageValue * (5.0 / 1023.0) * 5; // Assuming it reads 0-5V
+    float current = currentValue * (5.0 / 1023.0); // Example conversion
+
+    // Print to serial for monitoring
+    Serial.print("Flow Rate: "); Serial.print(flowRate); Serial.println(" L/h");
+    Serial.print("Fuel Level: "); Serial.print(fuelLevel); Serial.println("%");
+    Serial.print("Voltage: "); Serial.print(voltage); Serial.println(" V");
+    Serial.print("Current: "); Serial.print(current); Serial.println(" A");
+    
+    // Delay before the next reading
+    delay(1000);
 }
