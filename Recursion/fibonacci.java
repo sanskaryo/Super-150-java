@@ -1,20 +1,36 @@
 public class fibonacci {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+		
+		String ques = "abc";
+		System.out.println("\n"+Count(ques, ""));
+		
+		// System.out.println(count);
+	}
 
+	public static int Count(String ques, String ans) {
+		if (ques.length() == 0) {
+			System.out.print(ans+" ");
+			return 1;
+		}
+		char ch = ques.charAt(0);
+		int a = Count(ques.substring(1), ans);// no
+		int b = Count(ques.substring(1), ans + ch);// yes
+		return a + b;
+	}
 
-        int n =5;
-        System.out.print(fib(n));
-    }
+	// static int count = 0;
 
-    public static int fib(int n){
-        if(n==0 || n==1){
-            return n ;
-        }
+	public static void print(String ques, String ans) {
+		if (ques.length() == 0) {
+			System.out.println(ans);
+			// count++;
+			return;
+		}
+		char ch = ques.charAt(0);
+		print(ques.substring(1), ans);// no
+		print(ques.substring(1), ans + ch);// yes
+	}
 
-        int f1 = fib(n-1);
-        int f2= fib(n-2);
-        return f1+f2;
-    }
     
 }

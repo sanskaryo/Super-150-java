@@ -1,4 +1,4 @@
-public class Coin_Toss {
+public class Coin_toss2 {
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,9 @@ public class Coin_Toss {
 			System.out.println(ans);
 			return;
 		}
-		Print(n - 1, ans + "H");
+		if (ans.length() == 0 || ans.charAt(ans.length() - 1) != 'H') {
+            Print(n - 1, ans + "H");
+        }
 		Print(n - 1, ans + "T");
 
 	}
