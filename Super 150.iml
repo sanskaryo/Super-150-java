@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/BackTracking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Hashmap_ques" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/OOPS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Sorting" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WrapperClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arraylists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/codeforces" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dataTypes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/functions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/leetcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/patterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slidingWindow" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
